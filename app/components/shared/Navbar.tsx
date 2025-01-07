@@ -69,21 +69,21 @@ const Navbar = () => {
           <line x1="4" x2="20" y1="18" y2="18" />{" "}
         </svg>
         {dropDownState && (
-          <ul className=" z-10  gap-2  bg-[#393E46]  absolute right-0 top-11 flex w-[200px] flex-col  rounded-lg   text-base ">
-            <li className="cursor-pointer  px-6 py-2 text-white rounded-t-lg hover:bg-sky-600 ">
-              Home
+          <ul className=" z-10 text-base gap-2  bg-[#f6510adf]  absolute right-0 top-11 flex w-[200px] flex-col  rounded-lg  ">
+            <li className="cursor-pointer  px-6 py-2 text-white rounded-t-lg hover:bg-[#f60a0a] ">
+              <NavLink to="/">Home</NavLink>
             </li>
-            <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
-              Colleges
+            <li className="cursor-pointer  px-6 py-2 text-white hover:bg-[#f60a0a] ">
+              <NavLink to="/college">Colleges</NavLink>
             </li>
-            <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
-              Admission
+            <li className="cursor-pointer  px-6 py-2 text-white hover:bg-[#f60a0a] ">
+              <NavLink to="/admission">Admission</NavLink>
             </li>
-            <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
-              My College
+            <li className="cursor-pointer  px-6 py-2 text-white hover:bg-[#f60a0a] ">
+              <NavLink to="/myCollege"> My College</NavLink>
             </li>
-            <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
-              Login
+            <li className="cursor-pointer  px-6 py-2 text-white hover:bg-[#f60a0a] ">
+              <NavLink to="/login">Login</NavLink>
             </li>
           </ul>
         )}
