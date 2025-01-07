@@ -1,11 +1,10 @@
-import React from "react";
-import Footer from "~/components/shared/Footer";
+
 
 const MyCollegePage = () => {
   return (
     <div>
-      This is my college page
-      <Footer />
+      This is my college page After Submit the college will show here
+    
     </div>
   );
 };
