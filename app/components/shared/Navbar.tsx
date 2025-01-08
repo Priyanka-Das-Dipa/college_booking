@@ -19,29 +19,29 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <nav className="flex items-center justify-between bg-white px-4 py-2 text-black mb-24">
+    <nav className="flex items-center justify-between bg-white px-4 py-2 text-black">
       <div className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
         <img src={logo} alt="" />
       </div>
       <ul className="hidden items-center justify-between gap-10 md:flex">
-        <li className="group flex  cursor-pointer flex-col">
+        <li className="group flex font-bold cursor-pointer flex-col">
           <NavLink to="/">Home</NavLink>
 
           <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>
-        <li className="group flex  cursor-pointer flex-col">
+        <li className="group flex font-bold cursor-pointer flex-col">
           <NavLink to="/college">Colleges</NavLink>
           <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>
-        <li className="group flex  cursor-pointer flex-col">
+        <li className="group flex font-bold cursor-pointer flex-col">
           <NavLink to="/admission">Admission</NavLink>
           <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>
-        <li className="group flex  cursor-pointer flex-col">
+        <li className="group flex font-bold cursor-pointer flex-col">
           <NavLink to="/myCollege"> My College</NavLink>
           <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>
-        <li className="group flex  cursor-pointer flex-col">
+        <li className="group flex font-bold cursor-pointer flex-col">
           <NavLink to="/login">Login</NavLink>
           <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>

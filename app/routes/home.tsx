@@ -1,7 +1,8 @@
 import type { Route } from "./+types/home";
 import Banner from "~/components/home/Banner";
 import Gallery from "~/components/home/Gallery";
-import Review from "~/components/home/Review";
+import Research from "~/components/home/Research";
+// import Review from "~/components/home/Review";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -13,10 +14,11 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <div className="space-y-4">
+      <div className="space-y-10">
         <Banner />
+        <Research />
         <Gallery />
-        <Review />
+        {/* <Review /> */}
       </div>
     </>
   );

@@ -48,8 +48,8 @@ const Banner = () => {
             className="w-full h-full object-cover "
           />
           {/* Text Overlay */}
-          <div className="absolute inset-0 flex items-center bg-black/50">
-            <div className="text-left ml-8 space-y-6">
+          <div className=" absolute inset-0 flex items-center bg-black/50">
+            <div className="container mx-auto text-left ml-8 space-y-6">
               <h2 className="text-3xl md:text-4xl lg:text-7xl font-bold text-white opacity-0 animate-fadeDown">
                 {banner.text}
               </h2>

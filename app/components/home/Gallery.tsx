@@ -21,8 +21,8 @@ const Gallery = () => {
           ></div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div className="group relative w-[450px] h-[300px]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="group relative w-full md:w-[450px] h-[300px]">
           <img
             src={img1}
             alt=""
@@ -33,7 +33,7 @@ const Gallery = () => {
           <div className="absolute bottom-0 right-0 w-0 h-[2px] bg-[#f6520a] transition-all duration-300 group-hover:w-full"></div>
           <div className="absolute bottom-0 right-0 h-0 w-[2px] bg-[#f6520a] transition-all duration-300 group-hover:h-full"></div>
         </div>
-        <div className="group relative w-[450px] h-[300px]">
+        <div className="group relative w-full md:w-[450px] h-[300px]">
           <img
             src={img2}
             alt=""
@@ -44,7 +44,7 @@ const Gallery = () => {
           <div className="absolute bottom-0 right-0 w-0 h-[2px] bg-[#f6520a] transition-all duration-300 group-hover:w-full"></div>
           <div className="absolute bottom-0 right-0 h-0 w-[2px] bg-[#f6520a] transition-all duration-300 group-hover:h-full"></div>
         </div>
-        <div className="group relative w-[450px] h-[300px]">
+        <div className="group relative w-full md:w-[450px] h-[300px]">
           <img
             src={img3}
             alt=""
@@ -55,7 +55,7 @@ const Gallery = () => {
           <div className="absolute bottom-0 right-0 w-0 h-[2px] bg-[#f6520a] transition-all duration-300 group-hover:w-full"></div>
           <div className="absolute bottom-0 right-0 h-0 w-[2px] bg-[#f6520a] transition-all duration-300 group-hover:h-full"></div>
         </div>
-        <div className="group relative w-[450px] h-[300px]">
+        <div className="group relative w-full md:w-[450px] h-[300px]">
           <img
             src={img4}
             alt=""
@@ -66,7 +66,7 @@ const Gallery = () => {
           <div className="absolute bottom-0 right-0 w-0 h-[2px] bg-[#f6520a] transition-all duration-300 group-hover:w-full"></div>
           <div className="absolute bottom-0 right-0 h-0 w-[2px] bg-[#f6520a] transition-all duration-300 group-hover:h-full"></div>
         </div>
-        <div className="group relative w-[450px] h-[300px]">
+        <div className="group relative h-full md:w-[450px] h-[300px]">
           <img
             src={img5}
             alt=""
@@ -77,7 +77,7 @@ const Gallery = () => {
           <div className="absolute bottom-0 right-0 w-0 h-[2px] bg-[#f6520a] transition-all duration-300 group-hover:w-full"></div>
           <div className="absolute bottom-0 right-0 h-0 w-[2px] bg-[#f6520a] transition-all duration-300 group-hover:h-full"></div>
         </div>
-        <div className="group relative w-[450px] h-[300px]">
+        <div className="group relative w-full md:w-[450px] h-[300px]">
           <img
             src={img6}
             alt=""

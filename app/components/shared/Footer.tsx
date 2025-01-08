@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col">
           <div className="flex flex-col items-center justify-between gap-5 bg-black py-8 text-white md:flex-row md:gap-0">
-            <img src={footer_logo} alt="" />
+            <img src={footer_logo} alt="Educam College Booking System Logo" />
             <nav className="text-lg">
-              <ul className="flex h-full items-center justify-center gap-3">
+              <ul className="flex h-full items-center justify-center gap-8">
                 <li>
                   <a className="cursor-pointer hover:underline">Home</a>
                 </li>
@@ -21,7 +21,7 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-          <aside className=" py-5 text-center  text-sm text-white">
+          <aside className="py-5 text-center text-sm text-white">
             <p>
               &copy; 2025 Educam College Booking System. All Rights Reserved by
               Priyanka Das Dipa.

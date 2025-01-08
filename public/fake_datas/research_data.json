@@ -1,0 +1,23 @@
+ [
+    {
+      "researchName": "Integration of Technology into Education",
+      "description": "Sed iaculis leo id nisi laoreet, in elementum velit fringilla. Phasellus at justo quis orci …",
+      "date": "May 12, 2021",
+      "comments": 56,
+      "views": 156
+    },
+    {
+      "researchName": "Advancements in AI and Machine Learning",
+      "description": "Exploring cutting-edge AI applications to improve educational outcomes and student engagement …",
+      "date": "June 18, 2021",
+      "comments": 72,
+      "views": 198
+    },
+    {
+      "researchName": "The Role of Data Analytics in Modern Education",
+      "description": "How data-driven insights are reshaping the way educators design and implement learning programs …",
+      "date": "July 25, 2021",
+      "comments": 64,
+      "views": 178
+    }
+  ]
