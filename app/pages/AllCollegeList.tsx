@@ -1,13 +1,13 @@
-import img1 from "../../images/img-2.jpeg";
+import img1 from "../../images/banner1.jpg";
 
 const AllCollegeList = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div className="flex">
-            <div>
-                <img src={img1} alt="" />
-            </div>
-            <div className="space-y-12 rounded-br-lg rounded-tr-lg bg-white p-10 text-center shadow-[0px_7px_30px_2px_rgba(100,100,111,0.2)]">
+      <div className="flex">
+        <div>
+          <img src={img1} alt="" />
+        </div>
+        <div className="space-y-12 rounded-br-lg rounded-tr-lg bg-white p-10 text-center shadow-[0px_7px_30px_2px_rgba(100,100,111,0.2)]">
           {/* User Info */}
           <div className="space-y-1">
             <h2 className="text-center text-2xl font-medium text-gray-700 dark:text-white/90 lg:text-3xl">
@@ -49,7 +49,7 @@ const AllCollegeList = () => {
             </button>
           </div>
         </div>
-        </div>
+      </div>
       <div className="flex flex-col items-center justify-center md:flex-row">
         {/* Left Section: Image */}
         <div className="sm:w-[350px]">
@@ -106,7 +106,6 @@ const AllCollegeList = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

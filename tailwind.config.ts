@@ -20,6 +20,20 @@ export default {
           '"Noto Color Emoji"',
         ],
       },
+      animation: {
+        fadeDown: "fadeDown 1s ease-out forwards",
+        fadeUp: "fadeUp 1s ease-out forwards",
+      },
+      keyframes: {
+        fadeDown: {
+          "0%": { opacity: "0", transform: "translateY(-20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
     },
   },
   plugins: [],
