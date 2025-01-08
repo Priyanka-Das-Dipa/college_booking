@@ -13,9 +13,11 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <>
-      <Banner />
-      <Gallery />
-      <Review />
+      <div className="space-y-4">
+        <Banner />
+        <Gallery />
+        <Review />
+      </div>
     </>
   );
 }
