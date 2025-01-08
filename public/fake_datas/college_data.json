@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Greenfield College",
+    "image": "https://i.ibb.co.com/TWGj1y6/img-1.jpg",
+    "rating": 2.5,
+    "admission_date": "2025-05-15",
+    "research_count": 120,
+    "details": {
+      "events": [
+        "Annual Science Expo",
+        "College Talent Show",
+        "Spring Festival"
+      ],
+      "sports_facilities": ["Basketball Court", "Swimming Pool", "Tennis Court"]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Blue Ridge University",
+    "image": "https://i.ibb.co.com/rwrVTpC/img-2.jpg",
+    "rating": 4.2,
+    "admission_date": "2025-07-01",
+    "research_count": 85,
+    "details": {
+      "events": [
+        "University Research Symposium",
+        "Winter Gala",
+        "Community Outreach Program"
+      ],
+      "sports_facilities": ["Football Stadium", "Track and Field", "Gymnasium"]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Sunrise Academy",
+    "image": "https://i.ibb.co.com/r2ZW8d0/img-3.jpg",
+    "rating": 4.8,
+    "admission_date": "2025-04-10",
+    "research_count": 200,
+    "details": {
+      "events": [
+        "Research Conference",
+        "Music and Arts Festival",
+        "Cultural Night"
+      ],
+      "sports_facilities": [
+        "Basketball Court",
+        "Badminton Courts",
+        "Football Field"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Silver Valley Institute",
+    "image": "https://i.ibb.co.com/CW3cLSp/img-5.jpg",
+    "rating": 4.3,
+    "admission_date": "2025-06-20",
+    "research_count": 150,
+    "details": {
+      "events": [
+        "International Conference on Innovation",
+        "Silver Valley Marathon",
+        "Spring Music Festival"
+      ],
+      "sports_facilities": [
+        "Cricket Field",
+        "Cycling Track",
+        "Indoor Swimming Pool"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "name": "Oceanview College",
+    "image": "https://i.ibb.co.com/sth5xHR/uni1.jpg",
+    "rating": 4.1,
+    "admission_date": "2025-08-25",
+    "research_count": 95,
+    "details": {
+      "events": [
+        "Tech Innovators Meet",
+        "Oceanview Charity Ball",
+        "Open House Day"
+      ],
+      "sports_facilities": ["Tennis Courts", "Running Track", "Gymnasium"]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Hillcrest University",
+    "image": "https://i.ibb.co.com/Krqx491/uni2.jpg",
+    "rating": 4.6,
+    "admission_date": "2025-09-01",
+    "research_count": 180,
+    "details": {
+      "events": [
+        "Annual Tech Fair",
+        "Cultural Exchange Program",
+        "Art and Design Exhibition"
+      ],
+      "sports_facilities": [
+        "Football Stadium",
+        "Yoga Center",
+        "Rock Climbing Wall"
+      ]
+    }
+  }
+]

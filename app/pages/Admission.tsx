@@ -66,7 +66,7 @@ const AdmissionPage = () => {
         {uni_data.map((data, index) => (
           <div
             key={index}
-            className="w-full max-w-[400px] space-y-3 rounded-xl bg-white p-4 shadow-lg dark:bg-[#18181B]"
+            className="w-full max-w-[400px] space-y-3 rounded-xl bg-white p-4 shadow-lg dark:bg-[#18181B] border border-[#f6520a]"
           >
             <div className="flex h-48 w-full justify-center lg:h-[260px]">
               <img

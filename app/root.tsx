@@ -48,8 +48,8 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <div className="my-16">
-        <Outlet />;
+      <div className="">
+        <Outlet />
       </div>
       <Footer />
     </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const LoginPage = () => {
   return (
-    <div className="mx-auto w-full max-w-md space-y-4 rounded-lg border bg-white p-10 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
+    <div className="mx-auto w-full my-16 max-w-md space-y-4 rounded-lg border bg-white p-10 shadow-lg dark:border-zinc-700 dark:bg-zinc-900">
       <h1 className="text-3xl font-semibold">Sign In</h1>
       <form action="#" className="space-y-6">
         <div className="space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
