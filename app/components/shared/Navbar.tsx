@@ -25,24 +25,60 @@ const Navbar = () => {
       </div>
       <ul className="hidden items-center justify-between gap-10 md:flex">
         <li className="group flex font-bold cursor-pointer flex-col">
-          <NavLink to="/">Home</NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-[#f6520a]" : "text-black"
+            }
+          >
+            Home
+          </NavLink>
 
           <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li className="group flex font-bold cursor-pointer flex-col">
-          <NavLink to="/college">Colleges</NavLink>
+          <NavLink
+            to="/college"
+            className={({ isActive }) =>
+              isActive ? "text-[#f6520a]" : "text-black"
+            }
+          >
+            Colleges
+          </NavLink>
           <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li className="group flex font-bold cursor-pointer flex-col">
-          <NavLink to="/admission">Admission</NavLink>
+          <NavLink
+            to="/admission"
+            className={({ isActive }) =>
+              isActive ? "text-[#f6520a]" : "text-black"
+            }
+          >
+            Admission
+          </NavLink>
           <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li className="group flex font-bold cursor-pointer flex-col">
-          <NavLink to="/myCollege"> My College</NavLink>
+          <NavLink
+            to="/myCollege"
+            className={({ isActive }) =>
+              isActive ? "text-[#f6520a]" : "text-black"
+            }
+          >
+            {" "}
+            My College
+          </NavLink>
           <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>
         <li className="group flex font-bold cursor-pointer flex-col">
-          <NavLink to="/login">Login</NavLink>
+          <NavLink
+            to="/login"
+            className={({ isActive }) =>
+              isActive ? "text-[#f6520a]" : "text-black"
+            }
+          >
+            Login
+          </NavLink>
           <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-[#f6520a] transition-all duration-300 group-hover:w-full"></span>
         </li>
       </ul>
