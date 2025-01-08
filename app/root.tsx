@@ -48,7 +48,9 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <Outlet />;
+      <div className="my-16">
+        <Outlet />;
+      </div>
       <Footer />
     </div>
   );

@@ -1,10 +1,13 @@
-import React from "react";
+import { useState } from "react";
 import img1 from "../../images/uni1.jpeg";
 import img2 from "../../images/uni2.jpeg";
 import img3 from "../../images/uni3.jpeg";
 import img4 from "../../images/uni4.jpeg";
+import AdmissionModal from "~/components/modal/AdmissionModal";
 
 const AdmissionPage = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const [selectedUniversity, setSelectedUniversity] = useState(null);
   const uni_data = [
     {
       id: 1,
@@ -45,6 +48,20 @@ const AdmissionPage = () => {
   ];
   return (
     <div className="container mx-auto min-h-screen">
+      <div className="text-center space-y-2 pb-16">
+        <p className="text-4xl font-bold pb-3">
+          Top Ranked College for Admission
+        </p>
+        <div className="relative mt-2 w-1/3 mx-auto">
+          <div className="h-1 bg-gray-300"></div>
+          <div
+            className="absolute top-0 left-1/2 transform -translate-x-1/2 h-1 bg-[#f6520a]"
+            style={{ width: "120px" }}
+          ></div>
+        </div>
+      </div>
+
+      {/* Crads Div */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {uni_data.map((data, index) => (
           <div
@@ -60,7 +77,13 @@ const AdmissionPage = () => {
               />
             </div>
             <div className="space-y-2 font-semibold">
-              <h6 className="text-sm text-center md:text-base lg:text-3xl">
+              <h6
+                onClick={() => {
+                  setOpenModal(true);
+                  setSelectedUniversity(data);
+                }}
+                className="text-sm text-center md:text-base lg:text-3xl hover:cursor-pointer"
+              >
                 {data.name}
               </h6>
               <p className="text-xs text-center">{data.address}</p>
@@ -68,6 +91,13 @@ const AdmissionPage = () => {
           </div>
         ))}
       </div>
+
+      {/* Modal */}
+      <AdmissionModal
+        isOpen={openModal}
+        onClose={() => setOpenModal(false)}
+        data={selectedUniversity}
+      />
     </div>
   );
 };
