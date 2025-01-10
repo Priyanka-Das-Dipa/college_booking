@@ -47,7 +47,7 @@ const AdmissionPage = () => {
     },
   ];
   return (
-    <div className="container mx-auto min-h-screen">
+    <div className="container mx-auto min-h-screen my-16">
       <div className="text-center space-y-2 pb-16">
         <p className="text-4xl font-bold pb-3">
           Top Ranked College for Admission

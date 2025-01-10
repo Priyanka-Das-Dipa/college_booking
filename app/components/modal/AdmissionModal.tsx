@@ -1,7 +1,34 @@
-
-
-const AdmissionModal = ({ isOpen, onClose, data } : any) => {
+const AdmissionModal = ({ isOpen, onClose, data }: any) => {
   if (!isOpen || !data) return null;
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const subject = form.subject.value;
+    const email = form.email.value;
+    const phone = form.phone.value;
+    const address = form.address.value;
+    const dob = form.dob.value;
+    const newCandidate = { name, subject, email, phone, address, dob };
+    console.log(newCandidate);
+
+    fetch("http://localhost:5000/addCandidate", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newCandidate),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          alert("Candidate added successfully!");
+          onClose();
+        }
+      });
+  };
   return (
     <>
       <div
@@ -27,7 +54,7 @@ const AdmissionModal = ({ isOpen, onClose, data } : any) => {
           </p>
 
           {/* Input Fields */}
-          <form className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
               <label className="text-sm font-medium">Candidate Name</label>
               <input
@@ -101,7 +128,7 @@ const AdmissionModal = ({ isOpen, onClose, data } : any) => {
               </div>
             </div>
             <button
-              type="button"
+              type="submit"
               className="w-full px-4 py-2 hover:text-[#f6520a] border-2 hover:bg-white hover:border-[#f6520a] text-white rounded-lg bg-[#f6520a]"
             >
               Submit

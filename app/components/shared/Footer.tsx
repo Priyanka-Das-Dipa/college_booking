@@ -3,7 +3,7 @@ import footer_logo from "../../../images/footer_logo.png";
 const Footer = () => {
   return (
     <footer className="bg-black">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5 lg:px-0">
         <div className="flex flex-col">
           <div className="flex flex-col items-center justify-between gap-5 bg-black py-8 text-white md:flex-row md:gap-0">
             <img src={footer_logo} alt="Educam College Booking System Logo" />
